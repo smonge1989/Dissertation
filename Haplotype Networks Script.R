@@ -1,19 +1,3 @@
-# Load required packages
-if (!requireNamespace("BiocManager", quietly = TRUE))
-  install.packages("BiocManager")
-
-# Install necessary Bioconductor packages if not already installed
-packages_needed <- c("ape", "pegas", "msa", "Biostrings", "GenomeInfoDbData", "GenomeInfoDb")
-for (pkg in packages_needed) {
-  if (!requireNamespace(pkg, quietly = TRUE)) {
-    if (pkg %in% c("msa", "Biostrings", "GenomeInfoDbData", "GenomeInfoDb")) {
-      BiocManager::install(pkg)
-    } else {
-      install.packages(pkg)
-    }
-  }
-}
-
 # Load libraries
 library(ape)
 library(pegas)
@@ -21,7 +5,7 @@ library(msa)
 library(Biostrings)
 
 # Set folder with FASTA files
-folder_path <- "E:/DNAmt/DLoop"
+folder_path <- "FOLDER_PATH"
 
 # Create output folder for plots or aligned files
 output_dir <- file.path(folder_path, "haplo_network_plots")
@@ -78,4 +62,4 @@ output_nexus <- file.path(folder_path, "dloop_aligned_sequences.nex")
 write.nexus.data(dna, file = output_nexus, format = "dna", interleaved = FALSE)
 cat("✅ NEXUS file saved to:", output_nexus, "\n")
 
-#Median-Joining Network constructed using PopArt, a separate program
+#Median-Joining Network inferred and visualized using PopArt (http://popart.otago.ac.nz)
