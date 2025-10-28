@@ -1,0 +1,181 @@
+ADAPTER REMOVAL
+
+*Run from the folder where the files need to be saved!
+cd /mnt/e/Samples
+
+M1
+YES!: AdapterRemoval --collapse --trimns --trimqualities --mm 5 --minlength 25 --file1 /mnt/e/LabComputerStorage/BaseSpace/WIL121521-326613516/FASTQ_Generation_2022-02-03_15_07_38Z-523350840/WIL121521_001_L004-ds.ceda88f219f8400791680ced9a44fefa/WIL121521-001_S10_L004_R1_001.fastq.gz --file2 /mnt/e/LabComputerStorage/BaseSpace/WIL121521-326613516/FASTQ_Generation_2022-02-03_15_07_38Z-523350840/WIL121521_001_L004-ds.ceda88f219f8400791680ced9a44fefa/WIL121521-001_S10_L004_R2_001.fastq.gz --basename M1_trimmed --threads 24
+THIS IS THE SAME: AdapterRemoval --collapse --trimns --mm 5 --minlength 25 --file1 /mnt/e/LabComputerStorage/BaseSpace/WIL121521-326613516/FASTQ_Generation_2022-02-03_15_07_38Z-523350840/WIL121521_001_L004-ds.ceda88f219f8400791680ced9a44fefa/WIL121521-001_S10_L004_R1_001.fastq.gz --file2 /mnt/e/LabComputerStorage/BaseSpace/WIL121521-326613516/FASTQ_Generation_2022-02-03_15_07_38Z-523350840/WIL121521_001_L004-ds.ceda88f219f8400791680ced9a44fefa/WIL121521-001_S10_L004_R2_001.fastq.gz --basename M1_trimmed_trimns --threads 24
+NOPE: AdapterRemoval --collapse --trimns --trimqualities --minquality 20 --mm 5 --minlength 25 --file1 /mnt/e/LabComputerStorage/BaseSpace/WIL121521-326613516/FASTQ_Generation_2022-02-03_15_07_38Z-523350840/WIL121521_001_L004-ds.ceda88f219f8400791680ced9a44fefa/WIL121521-001_S10_L004_R1_001.fastq.gz --file2 /mnt/e/LabComputerStorage/BaseSpace/WIL121521-326613516/FASTQ_Generation_2022-02-03_15_07_38Z-523350840/WIL121521_001_L004-ds.ceda88f219f8400791680ced9a44fefa/WIL121521-001_S10_L004_R2_001.fastq.gz --basename M1_trimmed_min20trimns --threads 24
+
+
+M2
+AdapterRemoval --collapse --trimns --trimqualities --mm 5 --minlength 25 --file1 /mnt/e/LabComputerStorage/BaseSpace/WIL121521-326613516/FASTQ_Generation_2022-02-03_15_07_38Z-523350840/WIL121521_002_L004-ds.409f84f424c84c9e930c69e53222f396/WIL121521-002_S11_L004_R1_001.fastq.gz --file2 /mnt/e/LabComputerStorage/BaseSpace/WIL121521-326613516/FASTQ_Generation_2022-02-03_15_07_38Z-523350840/WIL121521_002_L004-ds.409f84f424c84c9e930c69e53222f396/WIL121521-002_S11_L004_R2_001.fastq.gz --basename M2_trimmed --threads 24
+
+
+M3
+AdapterRemoval --collapse --trimns --trimqualities --mm 5 --minlength 25 --file1 /mnt/e/LabComputerStorage/BaseSpace/WIL121521-326613516/FASTQ_Generation_2022-02-03_15_07_38Z-523350840/WIL121521_003_L004-ds.268077273ea7423494f83121d1a7e897/WIL121521-003_S12_L004_R1_001.fastq.gz --file2 /mnt/e/LabComputerStorage/BaseSpace/WIL121521-326613516/FASTQ_Generation_2022-02-03_15_07_38Z-523350840/WIL121521_003_L004-ds.268077273ea7423494f83121d1a7e897/WIL121521-003_S12_L004_R2_001.fastq.gz --basename M3_trimmed --threads 24
+PENDING: cutadapt -j 4 -a AGATCGGAAGAGCACACGTCTGAACTCCAGTCA -A AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT -q 30 -o /mnt/e/LabComputerStorage/M3_trimmed1.fastq -p /mnt/e/LabComputerStorage/M3_trimmed2.fastq /mnt/e/LabComputerStorage/BaseSpace/WIL121521-326613516/FASTQ_Generation_2022-02-03_15_07_38Z-523350840/WIL121521_003_L004-ds.268077273ea7423494f83121d1a7e897/WIL121521-003_S12_L004_R1_001.fastq.gz /mnt/e/LabComputerStorage/BaseSpace/WIL121521-326613516/FASTQ_Generation_2022-02-03_15_07_38Z-523350840/WIL121521_003_L004-ds.268077273ea7423494f83121d1a7e897/WIL121521-003_S12_L004_R2_001.fastq.gz
+
+
+M4
+AdapterRemoval --collapse --trimns --trimqualities --mm 5 --minlength 25 --file1 /mnt/e/LabComputerStorage/BaseSpace/WIL121521-326613516/FASTQ_Generation_2022-02-03_15_07_38Z-523350840/WIL121521_004_L004-ds.dbb6397a8323477798f01ebe853e11ac/WIL121521-004_S13_L004_R1_001.fastq.gz --file2 /mnt/e/LabComputerStorage/BaseSpace/WIL121521-326613516/FASTQ_Generation_2022-02-03_15_07_38Z-523350840/WIL121521_004_L004-ds.dbb6397a8323477798f01ebe853e11ac/WIL121521-004_S13_L004_R2_001.fastq.gz --basename M4_trimmed --threads 24
+
+
+M5
+AdapterRemoval --collapse --trimns --trimqualities --mm 5 --minlength 25 --file1 /mnt/e/LabComputerStorage/BaseSpace/WIL121521-326613516/FASTQ_Generation_2022-02-03_15_07_38Z-523350840/WIL121521_005_L004-ds.22e7e707d96844b298283e08a02a4253/WIL121521-005_S14_L004_R1_001.fastq.gz --file2 /mnt/e/LabComputerStorage/BaseSpace/WIL121521-326613516/FASTQ_Generation_2022-02-03_15_07_38Z-523350840/WIL121521_005_L004-ds.22e7e707d96844b298283e08a02a4253/WIL121521-005_S14_L004_R2_001.fastq.gz --basename M5_trimmed --threads 24
+
+
+
+INDEX REFERENCE:
+
+bwa index -a is /mnt/e/DNAmt/MGmt_Ref.fasta index-prefix
+
+bwa index -a is /mnt/e/MC1R/MC1RgeneTurkey.fasta index-prefix
+
+bwa index -a is /mnt/e/MC1R/Chr13.fasta index-prefix
+
+bwa index -a is /mnt/e/WG/Chr1/Chr1.fasta index-prefix
+
+
+
+GENOME ALIGNMENT: COLLAPSED
+
+bwa aln -l 1024 -n 0.01 -o 2 -t 24 /mnt/e/DNAmt/MGmt_Ref.fasta /mnt/e/Samples/MX_trimmed.collapsed > /mnt/e/DNAmt/MX_trimmed.sai
+
+bwa samse /mnt/e/DNAmt/MGmt_Ref.fasta /mnt/e/DNAmt/MX_trimmed.sai /mnt/e/Samples/MX_trimmed.collapsed | samtools view -b -S -q 25 -F 4 > /mnt/e/DNAmt/MX_mapped.bam
+
+
+
+Script for MC1R gene (MEH, didn't work as well as I thught):
+
+bwa aln -l 1024 -n 0.01 -o 2 -t 24 /mnt/e/MC1R/MC1RgeneTurkey.fasta /mnt/e/Samples/MX_trimmed.collapsed > /mnt/e/MC1R/MX_MC1R_trimmed.sai && bwa samse /mnt/e/DNAmt/MC1RgeneTurkey.fasta /mnt/e/MC1R/MX_MC1R_trimmed.sai /mnt/e/Samples/MX_trimmed.collapsed | samtools view -b -S -q 25 -F 4 > /mnt/e/MC1R/MX_MC1R.bam
+
+
+
+Try instead: Script for Chromosome 13:
+
+bwa aln -l 1024 -n 0.01 -o 2 -t 24 /mnt/e/MC1R/Chr13.fasta /mnt/e/Samples/MX_trimmed.collapsed > /mnt/e/MC1R/MX_Chr13_trimmed.sai && bwa samse /mnt/e/MC1R/Chr13.fasta /mnt/e/MC1R/MX_Chr13_trimmed.sai /mnt/e/Samples/MX_trimmed.collapsed | samtools view -b -S -q 25 -F 4 > /mnt/e/MC1R/MX_Chr13.bam
+
+
+Then cut out MC1R gene in Geneious
+
+
+Script for Other Chromosomes:
+
+bwa aln -l 1024 -n 0.01 -o 2 -t 24 /mnt/e/WG/Chr#/Chr#.fasta /mnt/e/Samples/MX_trimmed.collapsed > /mnt/e/WG/Chr#/MX_Chr#_trimmed.sai && bwa samse /mnt/e/WG/Chr#/Chr#.fasta /mnt/e/WG/Chr#/MX_Chr#_trimmed.sai /mnt/e/Samples/MX_trimmed.collapsed | samtools view -b -S -q 25 -F 4 > /mnt/e/WG/Chr#/MX_Chr#.bam
+
+bwa aln -l 1024 -n 0.01 -o 2 -t 24 /mnt/e/WG/Chr1/Chr1.fasta /mnt/e/Samples/M3_trimmed.collapsed > /mnt/e/WG/Chr1/M3_Chr1_trimmed.sai && bwa samse /mnt/e/WG/Chr1/Chr1.fasta /mnt/e/WG/Chr1/M3_Chr1_trimmed.sai /mnt/e/Samples/M3_trimmed.collapsed | samtools view -b -S -q 25 -F 4 > /mnt/e/WG/Chr1/M3_Chr1.bam
+
+
+MULTIPLE CHROMOSOMES:
+
+Pt1:
+bwa index -a is /mnt/e/WG/Chr1/Chr1.fasta index-prefix && bwa aln -l 1024 -n 0.01 -o 2 -t 24 /mnt/e/WG/Chr1/Chr1.fasta /mnt/e/Samples/M3_trimmed.collapsed > /mnt/e/WG/Chr1/M3_Chr1_trimmed.sai && bwa samse /mnt/e/WG/Chr1/Chr1.fasta /mnt/e/WG/Chr1/M3_Chr1_trimmed.sai /mnt/e/Samples/M3_trimmed.collapsed | samtools view -b -S -q 25 -F 4 > /mnt/e/WG/Chr1/M3_Chr1.bam && bwa index -a is /mnt/e/WG/Chr2/Chr2.fasta index-prefix && bwa aln -l 1024 -n 0.01 -o 2 -t 24 /mnt/e/WG/Chr2/Chr2.fasta /mnt/e/Samples/M3_trimmed.collapsed > /mnt/e/WG/Chr2/M3_Chr2_trimmed.sai && bwa samse /mnt/e/WG/Chr2/Chr2.fasta /mnt/e/WG/Chr2/M3_Chr2_trimmed.sai /mnt/e/Samples/M3_trimmed.collapsed | samtools view -b -S -q 25 -F 4 > /mnt/e/WG/Chr2/M3_Chr2.bam && bwa index -a is /mnt/e/WG/Chr3/Chr3.fasta index-prefix && bwa aln -l 1024 -n 0.01 -o 2 -t 24 /mnt/e/WG/Chr3/Chr3.fasta /mnt/e/Samples/M3_trimmed.collapsed > /mnt/e/WG/Chr3/M3_Chr3_trimmed.sai && bwa samse /mnt/e/WG/Chr3/Chr3.fasta /mnt/e/WG/Chr3/M3_Chr3_trimmed.sai /mnt/e/Samples/M3_trimmed.collapsed | samtools view -b -S -q 25 -F 4 > /mnt/e/WG/Chr3/M3_Chr3.bam && bwa index -a is /mnt/e/WG/Chr4/Chr4.fasta index-prefix && bwa aln -l 1024 -n 0.01 -o 2 -t 24 /mnt/e/WG/Chr4/Chr4.fasta /mnt/e/Samples/M3_trimmed.collapsed > /mnt/e/WG/Chr4/M3_Chr4_trimmed.sai && bwa samse /mnt/e/WG/Chr4/Chr4.fasta /mnt/e/WG/Chr4/M3_Chr4_trimmed.sai /mnt/e/Samples/M3_trimmed.collapsed | samtools view -b -S -q 25 -F 4 > /mnt/e/WG/Chr4/M3_Chr4.bam && bwa index -a is /mnt/e/WG/Chr5/Chr5.fasta index-prefix && bwa aln -l 1024 -n 0.01 -o 2 -t 24 /mnt/e/WG/Chr5/Chr5.fasta /mnt/e/Samples/M3_trimmed.collapsed > /mnt/e/WG/Chr5/M3_Chr5_trimmed.sai && bwa samse /mnt/e/WG/Chr5/Chr5.fasta /mnt/e/WG/Chr5/M3_Chr5_trimmed.sai /mnt/e/Samples/M3_trimmed.collapsed | samtools view -b -S -q 25 -F 4 > /mnt/e/WG/Chr5/M3_Chr5.bam && bwa index -a is /mnt/e/WG/Chr6/Chr6.fasta index-prefix && bwa aln -l 1024 -n 0.01 -o 2 -t 24 /mnt/e/WG/Chr6/Chr6.fasta /mnt/e/Samples/M3_trimmed.collapsed > /mnt/e/WG/Chr6/M3_Chr6_trimmed.sai && bwa samse /mnt/e/WG/Chr6/Chr6.fasta /mnt/e/WG/Chr6/M3_Chr6_trimmed.sai /mnt/e/Samples/M3_trimmed.collapsed | samtools view -b -S -q 25 -F 4 > /mnt/e/WG/Chr6/M3_Chr6.bam && bwa index -a is /mnt/e/WG/Chr7/Chr7.fasta index-prefix && bwa aln -l 1024 -n 0.01 -o 2 -t 24 /mnt/e/WG/Chr7/Chr7.fasta /mnt/e/Samples/M3_trimmed.collapsed > /mnt/e/WG/Chr7/M3_Chr7_trimmed.sai && bwa samse /mnt/e/WG/Chr7/Chr7.fasta /mnt/e/WG/Chr7/M3_Chr7_trimmed.sai /mnt/e/Samples/M3_trimmed.collapsed | samtools view -b -S -q 25 -F 4 > /mnt/e/WG/Chr7/M3_Chr7.bam && bwa index -a is /mnt/e/WG/Chr8/Chr8.fasta index-prefix && bwa aln -l 1024 -n 0.01 -o 2 -t 24 /mnt/e/WG/Chr8/Chr8.fasta /mnt/e/Samples/M3_trimmed.collapsed > /mnt/e/WG/Chr8/M3_Chr8_trimmed.sai && bwa samse /mnt/e/WG/Chr8/Chr8.fasta /mnt/e/WG/Chr8/M3_Chr8_trimmed.sai /mnt/e/Samples/M3_trimmed.collapsed | samtools view -b -S -q 25 -F 4 > /mnt/e/WG/Chr8/M3_Chr8.bam && bwa index -a is /mnt/e/WG/Chr9/Chr9.fasta index-prefix && bwa aln -l 1024 -n 0.01 -o 2 -t 24 /mnt/e/WG/Chr9/Chr9.fasta /mnt/e/Samples/M3_trimmed.collapsed > /mnt/e/WG/Chr9/M3_Chr9_trimmed.sai && bwa samse /mnt/e/WG/Chr9/Chr9.fasta /mnt/e/WG/Chr9/M3_Chr9_trimmed.sai /mnt/e/Samples/M3_trimmed.collapsed | samtools view -b -S -q 25 -F 4 > /mnt/e/WG/Chr9/M3_Chr9.bam && bwa index -a is /mnt/e/WG/Chr10/Chr10.fasta index-prefix && bwa aln -l 1024 -n 0.01 -o 2 -t 24 /mnt/e/WG/Chr10/Chr10.fasta /mnt/e/Samples/M3_trimmed.collapsed > /mnt/e/WG/Chr10/M3_Chr10_trimmed.sai && bwa samse /mnt/e/WG/Chr10/Chr10.fasta /mnt/e/WG/Chr10/M3_Chr10_trimmed.sai /mnt/e/Samples/M3_trimmed.collapsed | samtools view -b -S -q 25 -F 4 > /mnt/e/WG/Chr10/M3_Chr10.bam
+
+Pt2:
+bwa index -a is /mnt/e/WG/Chr11/Chr11.fasta index-prefix && bwa aln -l 1024 -n 0.01 -o 2 -t 24 /mnt/e/WG/Chr11/Chr11.fasta /mnt/e/Samples/M3_trimmed.collapsed > /mnt/e/WG/Chr11/M3_Chr11_trimmed.sai && bwa samse /mnt/e/WG/Chr11/Chr11.fasta /mnt/e/WG/Chr11/M3_Chr11_trimmed.sai /mnt/e/Samples/M3_trimmed.collapsed | samtools view -b -S -q 25 -F 4 > /mnt/e/WG/Chr11/M3_Chr11.bam && bwa index -a is /mnt/e/WG/Chr12/Chr12.fasta index-prefix && bwa aln -l 1024 -n 0.01 -o 2 -t 24 /mnt/e/WG/Chr12/Chr12.fasta /mnt/e/Samples/M3_trimmed.collapsed > /mnt/e/WG/Chr12/M3_Chr12_trimmed.sai && bwa samse /mnt/e/WG/Chr12/Chr12.fasta /mnt/e/WG/Chr12/M3_Chr12_trimmed.sai /mnt/e/Samples/M3_trimmed.collapsed | samtools view -b -S -q 25 -F 4 > /mnt/e/WG/Chr12/M3_Chr12.bam && bwa index -a is /mnt/e/WG/Chr14/Chr14.fasta index-prefix && bwa aln -l 1024 -n 0.01 -o 2 -t 24 /mnt/e/WG/Chr14/Chr14.fasta /mnt/e/Samples/M3_trimmed.collapsed > /mnt/e/WG/Chr14/M3_Chr14_trimmed.sai && bwa samse /mnt/e/WG/Chr14/Chr14.fasta /mnt/e/WG/Chr14/M3_Chr14_trimmed.sai /mnt/e/Samples/M3_trimmed.collapsed | samtools view -b -S -q 25 -F 4 > /mnt/e/WG/Chr14/M3_Chr14.bam && bwa index -a is /mnt/e/WG/Chr15/Chr15.fasta index-prefix && bwa aln -l 1024 -n 0.01 -o 2 -t 24 /mnt/e/WG/Chr15/Chr15.fasta /mnt/e/Samples/M3_trimmed.collapsed > /mnt/e/WG/Chr15/M3_Chr15_trimmed.sai && bwa samse /mnt/e/WG/Chr15/Chr15.fasta /mnt/e/WG/Chr15/M3_Chr15_trimmed.sai /mnt/e/Samples/M3_trimmed.collapsed | samtools view -b -S -q 25 -F 4 > /mnt/e/WG/Chr15/M3_Chr15.bam && bwa index -a is /mnt/e/WG/Chr16/Chr16.fasta index-prefix && bwa aln -l 1024 -n 0.01 -o 2 -t 24 /mnt/e/WG/Chr16/Chr16.fasta /mnt/e/Samples/M3_trimmed.collapsed > /mnt/e/WG/Chr16/M3_Chr16_trimmed.sai && bwa samse /mnt/e/WG/Chr16/Chr16.fasta /mnt/e/WG/Chr16/M3_Chr16_trimmed.sai /mnt/e/Samples/M3_trimmed.collapsed | samtools view -b -S -q 25 -F 4 > /mnt/e/WG/Chr16/M3_Chr16.bam && bwa index -a is /mnt/e/WG/Chr17/Chr17.fasta index-prefix && bwa aln -l 1024 -n 0.01 -o 2 -t 24 /mnt/e/WG/Chr17/Chr17.fasta /mnt/e/Samples/M3_trimmed.collapsed > /mnt/e/WG/Chr17/M3_Chr17_trimmed.sai && bwa samse /mnt/e/WG/Chr17/Chr17.fasta /mnt/e/WG/Chr17/M3_Chr17_trimmed.sai /mnt/e/Samples/M3_trimmed.collapsed | samtools view -b -S -q 25 -F 4 > /mnt/e/WG/Chr17/M3_Chr17.bam && bwa index -a is /mnt/e/WG/Chr18/Chr18.fasta index-prefix && bwa aln -l 1024 -n 0.01 -o 2 -t 24 /mnt/e/WG/Chr18/Chr18.fasta /mnt/e/Samples/M3_trimmed.collapsed > /mnt/e/WG/Chr18/M3_Chr18_trimmed.sai && bwa samse /mnt/e/WG/Chr18/Chr18.fasta /mnt/e/WG/Chr18/M3_Chr18_trimmed.sai /mnt/e/Samples/M3_trimmed.collapsed | samtools view -b -S -q 25 -F 4 > /mnt/e/WG/Chr18/M3_Chr18.bam && bwa index -a is /mnt/e/WG/Chr19/Chr19.fasta index-prefix && bwa aln -l 1024 -n 0.01 -o 2 -t 24 /mnt/e/WG/Chr19/Chr19.fasta /mnt/e/Samples/M3_trimmed.collapsed > /mnt/e/WG/Chr19/M3_Chr19_trimmed.sai && bwa samse /mnt/e/WG/Chr19/Chr19.fasta /mnt/e/WG/Chr19/M3_Chr19_trimmed.sai /mnt/e/Samples/M3_trimmed.collapsed | samtools view -b -S -q 25 -F 4 > /mnt/e/WG/Chr19/M3_Chr19.bam && bwa index -a is /mnt/e/WG/Chr20/Chr20.fasta index-prefix && bwa aln -l 1024 -n 0.01 -o 2 -t 24 /mnt/e/WG/Chr20/Chr20.fasta /mnt/e/Samples/M3_trimmed.collapsed > /mnt/e/WG/Chr20/M3_Chr20_trimmed.sai && bwa samse /mnt/e/WG/Chr20/Chr20.fasta /mnt/e/WG/Chr20/M3_Chr20_trimmed.sai /mnt/e/Samples/M3_trimmed.collapsed | samtools view -b -S -q 25 -F 4 > /mnt/e/WG/Chr20/M3_Chr20.bam
+
+Pt3:
+bwa index -a is /mnt/e/WG/Chr21/Chr21.fasta index-prefix && bwa aln -l 1024 -n 0.01 -o 2 -t 24 /mnt/e/WG/Chr21/Chr21.fasta /mnt/e/Samples/M3_trimmed.collapsed > /mnt/e/WG/Chr21/M3_Chr21_trimmed.sai && bwa samse /mnt/e/WG/Chr21/Chr21.fasta /mnt/e/WG/Chr21/M3_Chr21_trimmed.sai /mnt/e/Samples/M3_trimmed.collapsed | samtools view -b -S -q 25 -F 4 > /mnt/e/WG/Chr21/M3_Chr21.bam && bwa index -a is /mnt/e/WG/Chr22/Chr22.fasta index-prefix && bwa aln -l 1024 -n 0.01 -o 2 -t 24 /mnt/e/WG/Chr22/Chr22.fasta /mnt/e/Samples/M3_trimmed.collapsed > /mnt/e/WG/Chr22/M3_Chr22_trimmed.sai && bwa samse /mnt/e/WG/Chr22/Chr22.fasta /mnt/e/WG/Chr22/M3_Chr22_trimmed.sai /mnt/e/Samples/M3_trimmed.collapsed | samtools view -b -S -q 25 -F 4 > /mnt/e/WG/Chr22/M3_Chr22.bam && bwa index -a is /mnt/e/WG/Chr23/Chr23.fasta index-prefix && bwa aln -l 1024 -n 0.01 -o 2 -t 24 /mnt/e/WG/Chr23/Chr23.fasta /mnt/e/Samples/M3_trimmed.collapsed > /mnt/e/WG/Chr23/M3_Chr23_trimmed.sai && bwa samse /mnt/e/WG/Chr23/Chr23.fasta /mnt/e/WG/Chr23/M3_Chr23_trimmed.sai /mnt/e/Samples/M3_trimmed.collapsed | samtools view -b -S -q 25 -F 4 > /mnt/e/WG/Chr23/M3_Chr23.bam && bwa index -a is /mnt/e/WG/Chr24/Chr24.fasta index-prefix && bwa aln -l 1024 -n 0.01 -o 2 -t 24 /mnt/e/WG/Chr24/Chr24.fasta /mnt/e/Samples/M3_trimmed.collapsed > /mnt/e/WG/Chr24/M3_Chr24_trimmed.sai && bwa samse /mnt/e/WG/Chr24/Chr24.fasta /mnt/e/WG/Chr24/M3_Chr24_trimmed.sai /mnt/e/Samples/M3_trimmed.collapsed | samtools view -b -S -q 25 -F 4 > /mnt/e/WG/Chr24/M3_Chr24.bam && bwa index -a is /mnt/e/WG/Chr25/Chr25.fasta index-prefix && bwa aln -l 1024 -n 0.01 -o 2 -t 24 /mnt/e/WG/Chr25/Chr25.fasta /mnt/e/Samples/M3_trimmed.collapsed > /mnt/e/WG/Chr25/M3_Chr25_trimmed.sai && bwa samse /mnt/e/WG/Chr25/Chr25.fasta /mnt/e/WG/Chr25/M3_Chr25_trimmed.sai /mnt/e/Samples/M3_trimmed.collapsed | samtools view -b -S -q 25 -F 4 > /mnt/e/WG/Chr25/M3_Chr25.bam && bwa index -a is /mnt/e/WG/Chr26/Chr26.fasta index-prefix && bwa aln -l 1024 -n 0.01 -o 2 -t 24 /mnt/e/WG/Chr26/Chr26.fasta /mnt/e/Samples/M3_trimmed.collapsed > /mnt/e/WG/Chr26/M3_Chr26_trimmed.sai && bwa samse /mnt/e/WG/Chr26/Chr26.fasta /mnt/e/WG/Chr26/M3_Chr26_trimmed.sai /mnt/e/Samples/M3_trimmed.collapsed | samtools view -b -S -q 25 -F 4 > /mnt/e/WG/Chr26/M3_Chr26.bam && bwa index -a is /mnt/e/WG/Chr27/Chr27.fasta index-prefix && bwa aln -l 1024 -n 0.01 -o 2 -t 24 /mnt/e/WG/Chr27/Chr27.fasta /mnt/e/Samples/M3_trimmed.collapsed > /mnt/e/WG/Chr27/M3_Chr27_trimmed.sai && bwa samse /mnt/e/WG/Chr27/Chr27.fasta /mnt/e/WG/Chr27/M3_Chr27_trimmed.sai /mnt/e/Samples/M3_trimmed.collapsed | samtools view -b -S -q 25 -F 4 > /mnt/e/WG/Chr27/M3_Chr27.bam && bwa index -a is /mnt/e/WG/Chr28/Chr28.fasta index-prefix && bwa aln -l 1024 -n 0.01 -o 2 -t 24 /mnt/e/WG/Chr28/Chr28.fasta /mnt/e/Samples/M3_trimmed.collapsed > /mnt/e/WG/Chr28/M3_Chr28_trimmed.sai && bwa samse /mnt/e/WG/Chr28/Chr28.fasta /mnt/e/WG/Chr28/M3_Chr28_trimmed.sai /mnt/e/Samples/M3_trimmed.collapsed | samtools view -b -S -q 25 -F 4 > /mnt/e/WG/Chr28/M3_Chr28.bam && bwa index -a is /mnt/e/WG/Chr29/Chr29.fasta index-prefix && bwa aln -l 1024 -n 0.01 -o 2 -t 24 /mnt/e/WG/Chr29/Chr29.fasta /mnt/e/Samples/M3_trimmed.collapsed > /mnt/e/WG/Chr29/M3_Chr29_trimmed.sai && bwa samse /mnt/e/WG/Chr29/Chr29.fasta /mnt/e/WG/Chr29/M3_Chr29_trimmed.sai /mnt/e/Samples/M3_trimmed.collapsed | samtools view -b -S -q 25 -F 4 > /mnt/e/WG/Chr29/M3_Chr29.bam && bwa index -a is /mnt/e/WG/Chr30/Chr30.fasta index-prefix && bwa aln -l 1024 -n 0.01 -o 2 -t 24 /mnt/e/WG/Chr30/Chr30.fasta /mnt/e/Samples/M3_trimmed.collapsed > /mnt/e/WG/Chr30/M3_Chr30_trimmed.sai && bwa samse /mnt/e/WG/Chr30/Chr30.fasta /mnt/e/WG/Chr30/M3_Chr30_trimmed.sai /mnt/e/Samples/M3_trimmed.collapsed | samtools view -b -S -q 25 -F 4 > /mnt/e/WG/Chr30/M3_Chr30.bam
+
+
+GENOME ALIGNMENT: NOT COLLAPSED (NOT WORKING)
+
+bwa aln -t 4 /mnt/e/DNAmt/MGmt_Ref.fasta /mnt/e/LabComputerStorage/M3_trimmed1.fastq -n 0.01 -l 1024 -O 2 > /mnt/e/DNAmt/M3_1.sai
+
+bwa aln -t 4 /mnt/e/DNAmt/MGmt_Ref.fasta /mnt/e/LabComputerStorage/M3_trimmed2.fastq -n 0.01 -l 1024 -O 2 > /mnt/e/DNAmt/M3_2.sai
+
+bwa sampe /mnt/e/DNAmt/MGmt_Ref.fasta /mnt/e/DNAmt/M3_1.sai /mnt/e/DNAmt/M3_2.sai /mnt/e/LabComputerStorage/M3_trimmed1.fastq /mnt/e/LabComputerStorage/M3_trimmed2.fastq > /mnt/e/DNAmt/M3_mapped.sam
+
+samtools view -b /mnt/e/DNAmt/M3_mapped.sam > /mnt/e/DNAmt/M3_mapped.bam
+
+
+SAM FLAGS
+
+samtools view -h /mnt/e/DNAmt/MX_mapped.bam | head
+
+samtools flagstat /mnt/e/DNAmt/MX_mapped.bam
+
+
+FLAGS FOR WG:
+
+samtools flagstat /mnt/e/WG/ChrX/M3_ChrX.bam
+
+samtools flagstat /mnt/e/MC1R/M3_Chr13.bam
+
+
+
+UNMAPPED READS
+
+samtools view -F4 /mnt/e/DNAmt/MX_mapped.bam | head
+
+samtools view -f4 /mnt/e/DNAmt/MX_mapped.bam > /mnt/e/DNAmt/MX_unmapped.bam
+
+samtools flagstat /mnt/e/DNAmt/MX_unmapped.bam
+
+
+
+SORT AND INDEX
+
+samtools sort /mnt/e/DNAmt/MX_mapped.bam > /mnt/e/DNAmt/MX_sort.bam
+
+samtools index /mnt/e/DNAmt/MX_sort.bam
+
+
+Scripts for MC1R gene:
+
+samtools sort /mnt/e/MC1R/MX_MC1R.bam > /mnt/e/MC1R/MX_MC1R_sort.bam
+
+samtools index /mnt/e/MC1R/MX_MC1R_sort.bam
+
+
+samtools sort /mnt/e/MC1R/M1_MC1R.bam > /mnt/e/MC1R/M1_MC1R_sort.bam
+
+samtools index /mnt/e/MC1R/M1_MC1R_sort.bam
+
+
+SCRIPTS FOR WG:
+
+samtools sort /mnt/e/WG/Chr1/M3_Chr1.bam > /mnt/e/WG/Chr1/M3_Chr1_sort.bam && samtools sort /mnt/e/WG/Chr2/M3_Chr2.bam > /mnt/e/WG/Chr2/M3_Chr2_sort.bam && samtools sort /mnt/e/WG/Chr3/M3_Chr3.bam > /mnt/e/WG/Chr3/M3_Chr3_sort.bam && samtools sort /mnt/e/WG/Chr4/M3_Chr4.bam > /mnt/e/WG/Chr4/M3_Chr4_sort.bam && samtools sort /mnt/e/WG/Chr5/M3_Chr5.bam > /mnt/e/WG/Chr5/M3_Chr5_sort.bam && samtools sort /mnt/e/WG/Chr6/M3_Chr6.bam > /mnt/e/WG/Chr6/M3_Chr6_sort.bam && samtools sort /mnt/e/WG/Chr7/M3_Chr7.bam > /mnt/e/WG/Chr7/M3_Chr7_sort.bam && samtools sort /mnt/e/WG/Chr8/M3_Chr8.bam > /mnt/e/WG/Chr8/M3_Chr8_sort.bam && samtools sort /mnt/e/WG/Chr9/M3_Chr9.bam > /mnt/e/WG/Chr9/M3_Chr9_sort.bam && samtools sort /mnt/e/WG/Chr10/M3_Chr10.bam > /mnt/e/WG/Chr10/M3_Chr10_sort.bam && samtools sort /mnt/e/WG/Chr11/M3_Chr11.bam > /mnt/e/WG/Chr11/M3_Chr11_sort.bam && samtools sort /mnt/e/WG/Chr12/M3_Chr12.bam > /mnt/e/WG/Chr12/M3_Chr12_sort.bam && samtools sort /mnt/e/WG/Chr14/M3_Chr14.bam > /mnt/e/WG/Chr14/M3_Chr14_sort.bam && samtools sort /mnt/e/WG/Chr15/M3_Chr15.bam > /mnt/e/WG/Chr15/M3_Chr15_sort.bam && samtools sort /mnt/e/WG/Chr16/M3_Chr16.bam > /mnt/e/WG/Chr16/M3_Chr16_sort.bam && samtools sort /mnt/e/WG/Chr17/M3_Chr17.bam > /mnt/e/WG/Chr17/M3_Chr17_sort.bam && samtools sort /mnt/e/WG/Chr18/M3_Chr18.bam > /mnt/e/WG/Chr18/M3_Chr18_sort.bam && samtools sort /mnt/e/WG/Chr19/M3_Chr19.bam > /mnt/e/WG/Chr19/M3_Chr19_sort.bam && samtools sort /mnt/e/WG/Chr20/M3_Chr20.bam > /mnt/e/WG/Chr20/M3_Chr20_sort.bam && samtools sort /mnt/e/WG/Chr21/M3_Chr21.bam > /mnt/e/WG/Chr21/M3_Chr21_sort.bam && samtools sort /mnt/e/WG/Chr22/M3_Chr22.bam > /mnt/e/WG/Chr22/M3_Chr22_sort.bam && samtools sort /mnt/e/WG/Chr23/M3_Chr23.bam > /mnt/e/WG/Chr23/M3_Chr23_sort.bam && samtools sort /mnt/e/WG/Chr24/M3_Chr24.bam > /mnt/e/WG/Chr24/M3_Chr24_sort.bam && samtools sort /mnt/e/WG/Chr25/M3_Chr25.bam > /mnt/e/WG/Chr25/M3_Chr25_sort.bam && samtools sort /mnt/e/WG/Chr26/M3_Chr26.bam > /mnt/e/WG/Chr26/M3_Chr26_sort.bam && samtools sort /mnt/e/WG/Chr27/M3_Chr27.bam > /mnt/e/WG/Chr27/M3_Chr27_sort.bam && samtools sort /mnt/e/WG/Chr28/M3_Chr28.bam > /mnt/e/WG/Chr28/M3_Chr28_sort.bam && samtools sort /mnt/e/WG/Chr29/M3_Chr29.bam > /mnt/e/WG/Chr29/M3_Chr29_sort.bam && samtools sort /mnt/e/WG/Chr30/M3_Chr30.bam > /mnt/e/WG/Chr30/M3_Chr30_sort.bam
+
+samtools sort /mnt/e/MC1R/M3_Chr13.bam > /mnt/e/MC1R/M3_Chr13_sort.bam
+
+
+REMOVE PCR DUPLICATES
+
+samtools rmdup /mnt/e/DNAmt/MX_sort.bam /mnt/e/DNAmt/MX_nodups.bam
+
+
+Script for MC1R gene:
+
+samtools rmdup /mnt/e/MC1R/MX_MC1R_sort.bam /mnt/e/MC1R/MX_MC1R_nodups.bam
+
+samtools rmdup /mnt/e/MC1R/M1_MC1R_sort.bam /mnt/e/MC1R/M1_MC1R_nodups.bam
+
+
+Script for WG:
+samtools rmdup /mnt/e/WG/Chr1/M3_Chr1_sort.bam  /mnt/e/WG/Chr1/M3_Chr1_nodups.bam && samtools rmdup /mnt/e/WG/Chr2/M3_Chr2_sort.bam  /mnt/e/WG/Chr2/M3_Chr2_nodups.bam && samtools rmdup /mnt/e/WG/Chr3/M3_Chr3_sort.bam  /mnt/e/WG/Chr3/M3_Chr3_nodups.bam && samtools rmdup /mnt/e/WG/Chr4/M3_Chr4_sort.bam  /mnt/e/WG/Chr4/M3_Chr4_nodups.bam && samtools rmdup /mnt/e/WG/Chr5/M3_Chr5_sort.bam  /mnt/e/WG/Chr5/M3_Chr5_nodups.bam && samtools rmdup /mnt/e/WG/Chr6/M3_Chr6_sort.bam  /mnt/e/WG/Chr6/M3_Chr6_nodups.bam && samtools rmdup /mnt/e/WG/Chr7/M3_Chr7_sort.bam  /mnt/e/WG/Chr7/M3_Chr7_nodups.bam && samtools rmdup /mnt/e/WG/Chr8/M3_Chr8_sort.bam  /mnt/e/WG/Chr8/M3_Chr8_nodups.bam && samtools rmdup /mnt/e/WG/Chr9/M3_Chr9_sort.bam  /mnt/e/WG/Chr9/M3_Chr9_nodups.bam && samtools rmdup /mnt/e/WG/Chr10/M3_Chr10_sort.bam  /mnt/e/WG/Chr10/M3_Chr10_nodups.bam && samtools rmdup /mnt/e/WG/Chr11/M3_Chr11_sort.bam  /mnt/e/WG/Chr11/M3_Chr11_nodups.bam && samtools rmdup /mnt/e/WG/Chr12/M3_Chr12_sort.bam  /mnt/e/WG/Chr12/M3_Chr12_nodups.bam && samtools rmdup /mnt/e/WG/Chr14/M3_Chr14_sort.bam  /mnt/e/WG/Chr14/M3_Chr14_nodups.bam && samtools rmdup /mnt/e/WG/Chr15/M3_Chr15_sort.bam  /mnt/e/WG/Chr15/M3_Chr15_nodups.bam && samtools rmdup /mnt/e/WG/Chr16/M3_Chr16_sort.bam  /mnt/e/WG/Chr16/M3_Chr16_nodups.bam && samtools rmdup /mnt/e/WG/Chr17/M3_Chr17_sort.bam  /mnt/e/WG/Chr17/M3_Chr17_nodups.bam && samtools rmdup /mnt/e/WG/Chr18/M3_Chr18_sort.bam  /mnt/e/WG/Chr18/M3_Chr18_nodups.bam && samtools rmdup /mnt/e/WG/Chr19/M3_Chr19_sort.bam  /mnt/e/WG/Chr19/M3_Chr19_nodups.bam && samtools rmdup /mnt/e/WG/Chr20/M3_Chr20_sort.bam  /mnt/e/WG/Chr20/M3_Chr20_nodups.bam && samtools rmdup /mnt/e/WG/Chr21/M3_Chr21_sort.bam  /mnt/e/WG/Chr21/M3_Chr21_nodups.bam && samtools rmdup /mnt/e/WG/Chr22/M3_Chr22_sort.bam  /mnt/e/WG/Chr22/M3_Chr22_nodups.bam && samtools rmdup /mnt/e/WG/Chr23/M3_Chr23_sort.bam  /mnt/e/WG/Chr23/M3_Chr23_nodups.bam && samtools rmdup /mnt/e/WG/Chr24/M3_Chr24_sort.bam  /mnt/e/WG/Chr24/M3_Chr24_nodups.bam && samtools rmdup /mnt/e/WG/Chr25/M3_Chr25_sort.bam  /mnt/e/WG/Chr25/M3_Chr25_nodups.bam && samtools rmdup /mnt/e/WG/Chr26/M3_Chr26_sort.bam  /mnt/e/WG/Chr26/M3_Chr26_nodups.bam && samtools rmdup /mnt/e/WG/Chr27/M3_Chr27_sort.bam  /mnt/e/WG/Chr27/M3_Chr27_nodups.bam && samtools rmdup /mnt/e/WG/Chr28/M3_Chr28_sort.bam  /mnt/e/WG/Chr28/M3_Chr28_nodups.bam && samtools rmdup /mnt/e/WG/Chr29/M3_Chr29_sort.bam  /mnt/e/WG/Chr29/M3_Chr29_nodups.bam && samtools rmdup /mnt/e/WG/Chr30/M3_Chr30_sort.bam  /mnt/e/WG/Chr30/M3_Chr30_nodups.bam
+
+samtools rmdup /mnt/e/MC1R/M3_Chr13_sort.bam /mnt/e/MC1R/M3_Chr13_nodups.bam
+
+
+
+
+DAMAGE PROFILER
+
+Make sure correct Java version and Damage Profiler are installed!
+
+For java 17:
+sudo apt install openjdk-17-jre
+
+
+To create executable Damage Profiler, make sure to run from correct folder:
+cd /mnt/e
+sudo chmod u+x DamageProfiler-1.1-java11.jar
+
+Script for Damage Profiler:
+java -jar DamageProfiler-1.1-java11.jar -i /mnt/e/WG/Chr1/M3_Chr1_nodups.bam -o /mnt/e/WG/Chr1/M3_DamageProfiler && java -jar DamageProfiler-1.1-java11.jar -i /mnt/e/WG/Chr2/M3_Chr2_nodups.bam -o /mnt/e/WG/Chr2/M3_DamageProfiler && java -jar DamageProfiler-1.1-java11.jar -i /mnt/e/WG/Chr3/M3_Chr3_nodups.bam -o /mnt/e/WG/Chr3/M3_DamageProfiler && java -jar DamageProfiler-1.1-java11.jar -i /mnt/e/WG/Chr4/M3_Chr4_nodups.bam -o /mnt/e/WG/Chr4/M3_DamageProfiler && java -jar DamageProfiler-1.1-java11.jar -i /mnt/e/WG/Chr5/M3_Chr5_nodups.bam -o /mnt/e/WG/Chr5/M3_DamageProfiler && java -jar DamageProfiler-1.1-java11.jar -i /mnt/e/WG/Chr6/M3_Chr6_nodups.bam -o /mnt/e/WG/Chr6/M3_DamageProfiler && java -jar DamageProfiler-1.1-java11.jar -i /mnt/e/WG/Chr7/M3_Chr7_nodups.bam -o /mnt/e/WG/Chr7/M3_DamageProfiler && java -jar DamageProfiler-1.1-java11.jar -i /mnt/e/WG/Chr8/M3_Chr8_nodups.bam -o /mnt/e/WG/Chr8/M3_DamageProfiler && java -jar DamageProfiler-1.1-java11.jar -i /mnt/e/WG/Chr9/M3_Chr9_nodups.bam -o /mnt/e/WG/Chr9/M3_DamageProfiler && java -jar DamageProfiler-1.1-java11.jar -i /mnt/e/WG/Chr10/M3_Chr10_nodups.bam -o /mnt/e/WG/Chr10/M3_DamageProfiler && java -jar DamageProfiler-1.1-java11.jar -i /mnt/e/WG/Chr11/M3_Chr11_nodups.bam -o /mnt/e/WG/Chr11/M3_DamageProfiler && java -jar DamageProfiler-1.1-java11.jar -i /mnt/e/WG/Chr12/M3_Chr12_nodups.bam -o /mnt/e/WG/Chr12/M3_DamageProfiler && java -jar DamageProfiler-1.1-java11.jar -i /mnt/e/WG/Chr14/M3_Chr14_nodups.bam -o /mnt/e/WG/Chr14/M3_DamageProfiler && java -jar DamageProfiler-1.1-java11.jar -i /mnt/e/WG/Chr15/M3_Chr15_nodups.bam -o /mnt/e/WG/Chr15/M3_DamageProfiler && java -jar DamageProfiler-1.1-java11.jar -i /mnt/e/WG/Chr16/M3_Chr16_nodups.bam -o /mnt/e/WG/Chr16/M3_DamageProfiler && java -jar DamageProfiler-1.1-java11.jar -i /mnt/e/WG/Chr17/M3_Chr17_nodups.bam -o /mnt/e/WG/Chr17/M3_DamageProfiler && java -jar DamageProfiler-1.1-java11.jar -i /mnt/e/WG/Chr18/M3_Chr18_nodups.bam -o /mnt/e/WG/Chr18/M3_DamageProfiler && java -jar DamageProfiler-1.1-java11.jar -i /mnt/e/WG/Chr19/M3_Chr19_nodups.bam -o /mnt/e/WG/Chr19/M3_DamageProfiler && java -jar DamageProfiler-1.1-java11.jar -i /mnt/e/WG/Chr20/M3_Chr20_nodups.bam -o /mnt/e/WG/Chr20/M3_DamageProfiler && java -jar DamageProfiler-1.1-java11.jar -i /mnt/e/WG/Chr21/M3_Chr21_nodups.bam -o /mnt/e/WG/Chr21/M3_DamageProfiler && java -jar DamageProfiler-1.1-java11.jar -i /mnt/e/WG/Chr22/M3_Chr22_nodups.bam -o /mnt/e/WG/Chr22/M3_DamageProfiler && java -jar DamageProfiler-1.1-java11.jar -i /mnt/e/WG/Chr23/M3_Chr23_nodups.bam -o /mnt/e/WG/Chr23/M3_DamageProfiler && java -jar DamageProfiler-1.1-java11.jar -i /mnt/e/WG/Chr24/M3_Chr24_nodups.bam -o /mnt/e/WG/Chr24/M3_DamageProfiler && java -jar DamageProfiler-1.1-java11.jar -i /mnt/e/WG/Chr25/M3_Chr25_nodups.bam -o /mnt/e/WG/Chr25/M3_DamageProfiler && java -jar DamageProfiler-1.1-java11.jar -i /mnt/e/WG/Chr26/M3_Chr26_nodups.bam -o /mnt/e/WG/Chr26/M3_DamageProfiler && java -jar DamageProfiler-1.1-java11.jar -i /mnt/e/WG/Chr27/M3_Chr27_nodups.bam -o /mnt/e/WG/Chr27/M3_DamageProfiler && java -jar DamageProfiler-1.1-java11.jar -i /mnt/e/WG/Chr28/M3_Chr28_nodups.bam -o /mnt/e/WG/Chr28/M3_DamageProfiler && java -jar DamageProfiler-1.1-java11.jar -i /mnt/e/WG/Chr29/M3_Chr29_nodups.bam -o /mnt/e/WG/Chr29/M3_DamageProfiler && java -jar DamageProfiler-1.1-java11.jar -i /mnt/e/WG/Chr30/M3_Chr30_nodups.bam -o /mnt/e/WG/Chr30/M3_DamageProfiler
+
+java -jar DamageProfiler-1.1-java11.jar -i /mnt/e/MC1R/M3_Chr13_nodups.bam -o /mnt/e/MC1R/M3_DamageProfiler
+
