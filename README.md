@@ -1,9 +1,10 @@
-# Between Culinary and Consecrated-The Introduction and Management of Turkeys in Greater Nicoya, Costa Rica (Dissertation Research Materials)
+# Between Culinary and Consecrated-The Introduction and Management of Turkeys in Greater Nicoya, Costa Rica 
+## Dissertation Research Materials
 
 This repository contains research materials associated with my doctoral dissertation on the translocation of ancient turkeys (Meleagris spp.) in Greater Nicoya, Costa Rica. The repository includes laboratory protocols, bioinformatics scripts and workflows, three-dimensional scans of archaeological specimens, and design files for custom myBaits hybridization-capture kits used in the research. These materials are provided to support research transparency, reproducibility, and future work on ancient DNA, zooarchaeology, and the movement and management of turkeys in the ancient Americas.
 
 
-Repository Contents:
+### Repository Contents:
 
 
 3D Scans/
