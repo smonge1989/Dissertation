@@ -97,6 +97,11 @@ Doctoral dissertation, Department of Anthropology, University of Illinois Chicag
 https://doi.org/10.25417/uic.31451779.
 
 
+### Other Publications
+
+Monge, Susan M., and Ashley E. Sharpe. 2025. Turkeys in the Far South: Evidence from Greater Nicoya. In Exploring the History of Turkey Management and Domestication: A Transatlantic Perspective, Vol. Natures en Sociétés 10, edited by Aurélie Manin, Camilla F. Speller, Eduardo Corona M., and Erin Kennedy Thornton, pp. 119–127. Muséum national d’Histoire naturelle, Paris. https://sciencepress.mnhn.fr/en/collections/natures-en-societes/exploring-history-turkey-management-and-domestication
+
+
 ### Citation
 
 If you use materials from this repository, please cite the dissertation and, where applicable, the publication associated with the specific data or method.
