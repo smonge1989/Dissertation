@@ -35,14 +35,14 @@ The analyses include workflows associated with:
 The scripts document the computational approaches and parameters used during the research. Please consult the dissertation for specific software versions and computational environments used. Users attempting to reproduce the analyses should consult the documentation within individual files and verify software dependencies. 
 
 
-DNA Capture/
+**DNA Capture/**
 
 Design files and supporting materials for the custom myBaits hybridization-capture kits developed and used for the dissertation research.
 
 These files document the design and targeting of genomic regions used for targeted enrichment of ancient turkey DNA. If you are interested in reusing these panels, you can consult the manufacturers: https://arborbiosci.com/products/targeted-ngs/mybaits-custom-kits/
 
 
-Protocol Files/
+**Protocol Files/**
 
 Laboratory protocols and methodological documentation associated with the ancient DNA work conducted for the dissertation.
 
@@ -51,7 +51,7 @@ These files document procedures in the form of checklists used for ancient DNA l
 Protocols are provided as records of the methods used during the research and should be considered alongside the associated publications and methodological references provided in the dissertation.
 
 
-Research Context
+### Research Context
 
 The materials in this repository were generated as part of doctoral research investigating the introduction, management, and social significance of turkeys in Greater Nicoya.
 
@@ -66,7 +66,7 @@ The dissertation combines zooarchaeological, ancient DNA, stable isotope, and ra
 The research focuses particularly on archaeological sites in Guanacaste, northwestern Costa Rica, and the broader Greater Nicoya region.
 
 
-Reproducibility and Reuse
+### Reproducibility and Reuse
 
 The files in this repository represent research materials generated or used during the dissertation project.
 
@@ -81,7 +81,7 @@ The 3D Scans provide digital representations of archaeological specimens that ca
 When reusing these materials, please retain original file names, specimen identifiers, and associated metadata whenever possible.
 
 
-Archaeological Collections and Data Use
+### Archaeological Collections and Data Use
 
 Some materials in this repository are derived from archaeological and reference collections held by museums and other institutions. Access to digital files in this repository does not supersede restrictions governing the physical collections or associated archaeological information.
 
@@ -90,26 +90,26 @@ Researchers using these materials should acknowledge the institutions and collec
 Please cite the dissertation and any publications associated with the specific dataset, method, or specimen being used.
 
 
-Dissertation
+### Dissertation
 
 Monge, Susan.2025. Between Culinary and Consecrated The Introduction and Management of Turkeys in Greater Nicoya, Costa Rica
 Doctoral dissertation, Department of Anthropology, University of Illinois Chicago.
 https://doi.org/10.25417/uic.31451779.
 
 
-Citation
+### Citation
 
 If you use materials from this repository, please cite the dissertation and, where applicable, the publication associated with the specific data or method.
 
 
-Acknowledgments
+### Acknowledgments
 
 This research involved archaeological collections, laboratories, museums, and researchers in Costa Rica and the United States. Individual materials within this repository may therefore have additional institutional or contributor acknowledgments.
 
 Please consult the documentation associated with individual files or datasets for relevant acknowledgments and collection information.
 
 
-Contact
+### Contact
 
 Susan Monge Blanco, PhD
 Postdoctoral Researcher
