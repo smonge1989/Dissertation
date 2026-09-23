@@ -7,7 +7,7 @@ This repository contains research materials associated with my doctoral disserta
 ### Repository Contents:
 
 
-3D Scans/
+**3D Scans/**
 
 Three-dimensional scan files documenting archaeological turkey specimens examined as part of the dissertation research.
 
@@ -16,7 +16,7 @@ These files provide digital records of selected specimens and may be useful for 
 Please retain specimen identifiers and associated contextual information when using or sharing individual scans. Where possible, please credit the TARDIS: 3-D Scanning and Print Laboratory (https://eaes.uic.edu/our-research/labs/tardis-print-laboratory/).Before reusing these files, please consult with the Museo Nacional de Costa Rica's Departamento de Protección del Patrimonio Cultural (DPPC).
 
 
-Bioinformatics/
+**Bioinformatics/**
 
 Scripts and computational files used to process and analyze ancient DNA sequencing data generated during the dissertation research.
 
