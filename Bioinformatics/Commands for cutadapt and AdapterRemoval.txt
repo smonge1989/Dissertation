@@ -1,0 +1,48 @@
+cutadapt -j 4 -a AGATCGGAAGAGCACACGTCTGAACTCCAGTCA -A AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT -q 30 -o /mnt/F/M3_trimmed1.fastq -p /mnt/f/M3_trimmed2.fastq /mnt/f/WIL121521-003_S12_L004_R1_001.fastq.gz /mnt/f/WIL121521-003_
+S12_L004_R2_001.fastq.gz
+
+AdapterRemoval --threads 4 --file1 /mnt/f/WIL121521-003_S12_L004_R1_001.fastq.gz --file2 /mnt/f/WIL121521-003_S12_L004_R2_001.fastq.gz --basename M3_paired --trimns --trimqualities --collapse --adapter1 AGATCGGAAGAGCACACGTCTGAACTCCAGTCA  --adapter2 AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT --minlength 25
+
+See: [Schubert2012] Schubert et al. "Improving ancient DNA read mapping against modern reference genomes". BMC Genomics. 2012 May 10;13:178. doi:10.1186/1471-2164-13-178.
+
+
+
+
+
+
+AdapterRemoval --threads 4 --identify-adapters --file1 /mnt/f/WIL121521-003_S12_L004_R1_001.fastq.gz --file2 WIL121521-003_S12_L004_R2_001.fastq.gz
+
+Results:
+Attempting to identify adapter sequences ...
+Opening FASTQ file '/mnt/f/WIL121521-003_S12_L004_R1_001.fastq.gz', line numbers start at 1
+Opening FASTQ file '/mnt/f/WIL121521-003_S12_L004_R2_001.fastq.gz', line numbers start at 1
+Processed a total of 789,656,482 reads in 22:12.0s; 592,000 reads per second on average ...
+   Found 370009929 overlapping pairs ...
+   Of which 14615467 contained adapter sequence(s) ...
+
+Printing adapter sequences, including poly-A tails:
+  --adapter1:  AGATCGGAAGAGCACACGTCTGAACTCCAGTCACNNNNNNATCTCGTATGCCGTCTTCTGCTTG
+               ||||||||||||||||||||||||||||||||||****** | ||   |      |  |
+   Consensus:  AGATCGGAAGAGCACACGTCTGAACTCCAGTCACCGCTCATTATCTCGTATGCCGTCTTCTGCTTGAAAAGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGCGGCGCC
+     Quality:  (&'(')*)*(*(*****'()()**('**)())+.,),*,+,,++*&)+*(+(*+*))+*'()')((%'%#$&('()))))))))((((''''&&&&&%%%%%$$$$$$$$$###############"#""""""#"""##
+
+    Top 5 most common 9-bp 5'-kmers:
+            1: AGATCGGAA = 38.88% (4483705)
+            2: AGATAGGAA =  3.05% (351613)
+            3: AGATCGGAG =  1.34% (154485)
+            4: AGATCGGAC =  1.20% (138073)
+            5: ATATCGGAA =  1.03% (118992)
+
+
+  --adapter2:  AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTAGATCTCGGTGGTCGCCGTATCATT
+               ||||||||||||||||| |||||||||  |    | |   ||
+   Consensus:  AGATCGGAAGAGCGTCGGGTAGGGAAAAGGGTAGGGTAGGGGGTTAATTTCGGGGGGCGCCCGATCATTTAAAAAGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGCCCC
+     Quality:  )+-*(,,*')))((%&'$&#$*-%&)$#$#%###($###(,$$#########($%($#$$&#######%#'))'$$&'''''''''''''''&&&&&&&%%%%%%%%%$$$$$$$$################""#"""##
+
+    Top 5 most common 9-bp 5'-kmers:
+            1: AGATCGGAA = 46.13% (916128)
+            2: AGATCGGAC = 11.76% (233606)
+            3: AGATAGGAA =  5.28% (104779)
+            4: AGATCGGAG =  2.23% (44225)
+            5: AGATCGGGA =  2.07% (41030)
+
